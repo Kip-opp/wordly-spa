@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly - Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Ionicons for clean Apple-like icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <main class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-left">
+                <div class="logo-area">
+                    <ion-icon name="book" class="app-icon"></ion-icon>
+                    <h1>Wordly</h1>
+                </div>
+            </div>
+
+            <!-- History/Saved Button (Top Right Corner) -->
+            <button id="history-btn" class="icon-btn" aria-label="View Library">
+                <ion-icon name="albums-outline"></ion-icon>
+            </button>
+        </header>
+            
+        <!-- Search Form -->
+        <form id="search-form" autocomplete="off">
+            <div class="search-bar">
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text" id="search-input" placeholder="Search for a word..." aria-label="Search word">
+            </div>
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+
+        <!-- Loading Spinner (Hidden by default) -->
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Error Message (Hidden by default) -->
+        <div id="error-msg" class="hidden">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <p id="error-text"></p>
+        </div>
+
+        <!-- Results Section -->
+        <section id="result-container" class="hidden">
+            <!-- Dynamic Content Injected Here via JS -->
+        </section>
+    </main>
+
+    <!-- Side Drawer for History/Saved -->
+    <div id="history-drawer" class="drawer">
+        <div class="drawer-header">
+            <h3>Library</h3>
+            <button id="close-drawer" class="icon-btn"><ion-icon name="close-outline"></ion-icon></button>
+        </div>
+        
+        <!-- Tabs to switch views -->
+        <div class="drawer-tabs">
+            <button class="tab-btn active" data-tab="saved">Saved</button>
+            <button class="tab-btn" data-tab="history">History</button>
+        </div>
+
+        <ul id="drawer-list" class="drawer-list">
+            <!-- JS will populate this list -->
+        </ul>
+    </div>
+
+    <!-- Overlay background for when drawer is open -->
+    <div id="overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -23,7 +23,7 @@ A sleek, modern dictionary application built with vanilla HTML, CSS, and JavaScr
 
 ## Screenshots
 
-![Wordly Dictionary App Screenshot](screenshots/wordly-screenshot.png)
+![Wordly Dictionary App Screenshot](screenshots/wordly.png)
 
 *Main interface showing word search results with definitions, pronunciation, and library management features.*
 
@@ -34,7 +34,7 @@ A sleek, modern dictionary application built with vanilla HTML, CSS, and JavaScr
 - **Icons**: Ionicons for crisp, scalable icons
 - **Storage**: Browser LocalStorage for persistent data
 
-## Installation & Usage
+## Installation & Usage![alt text](image.png)
 
 ### Local Development
 

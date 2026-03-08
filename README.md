@@ -21,6 +21,12 @@ A sleek, modern dictionary application built with vanilla HTML, CSS, and JavaScr
 - **Smooth Animations**: Subtle transitions and loading states for a polished feel
 - **Keyboard Navigation**: Full keyboard support for accessibility
 
+## Screenshots
+
+![Wordly Dictionary App Screenshot](screenshots/wordly-screenshot.png)
+
+*Main interface showing word search results with definitions, pronunciation, and library management features.*
+
 ## Tech Stack
 
 - **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+)
@@ -34,7 +40,7 @@ A sleek, modern dictionary application built with vanilla HTML, CSS, and JavaScr
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/wordly.git
+   git clone https://github.com/Kip-opp/wordly.git
    cd wordly
    ```
 
